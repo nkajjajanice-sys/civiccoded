@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Civic Coded Africa — Governance made yours</title>
+  <meta name="description" content="Civic Coded Africa makes civic education accessible across Africa by breaking down complex policy into simple, engaging lessons." />
+  <meta name="author" content="Civic Coded Africa" />
+  <link rel="icon" href="data:,">
+  <style>
+    /* Theme & layout */
+    :root{
+      --indigo:#1F3B82;
+      --african-green:#2E8B57;
+      --accent:#FFB233;
+      --muted:#6b7280;
+      --bg:#FBFCFE;
+      --card:#ffffff;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color-scheme: light;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:#0b1220;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo-svg{width:56px;height:56px;display:flex;align-items:center;justify-content:center}
+    .brand-title{font-weight:700;font-size:1.15rem}
+    nav{display:flex;gap:12px}
+    nav a{color:var(--muted);text-decoration:none;padding:6px;border-radius:6px}
+    nav a:focus, nav a:hover{color:var(--indigo);outline:none}
+    .hero{display:grid;grid-template-columns:1fr;gap:22px;padding:28px 0;align-items:center}
+    .hero h1{font-size:clamp(22px,4vw,40px);margin:0;color:var(--indigo)}
+    .slogan{color:var(--accent);font-weight:700;margin-top:6px}
+    .lead{font-size:1.05rem;color:#223;max-width:66ch}
+    .cta-row{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+    .btn{padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--indigo);color:white}
+    .btn-outline{border:2px solid rgba(15,20,40,0.08);background:white;color:var(--indigo)}
+    .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:26px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+    footer{border-top:1px solid rgba(12,20,40,0.06);margin-top:36px;padding:18px 0;color:var(--muted);font-size:0.95rem}
+    .hero-ill{display:none}
+    @media(min-width:900px){ .hero{grid-template-columns:1fr 420px} .hero-ill{display:block} }
+    a:focus, button:focus, input:focus, textarea:focus{outline:3px solid rgba(31,59,130,0.18);outline-offset:3px}
+    /* Small components */
+    .kbd{display:inline-block;background:#f1f5f9;border-radius:6px;padding:4px 8px;font-size:0.85rem;color:var(--muted)}
+    .muted{color:var(--muted)}
+    form label{display:block;margin-top:10px;font-size:0.95rem}
+    input, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;font-size:1rem}
+    .flex{display:flex;gap:12px;align-items:center}
+    .language-select{border-radius:8px;padding:6px 10px;border:1px solid #e6edf3;background:white}
+    /* Accessibility */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <div class="wrap" id="top">
+    <header role="banner">
+      <a class="brand" href="/" aria-label="Civic Coded Africa home">
+        <!-- simple svg mark: shield + open bracket -->
+        <svg class="logo-svg" viewBox="0 0 64 64" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#1F3B82"/>
+              <stop offset="1" stop-color="#2E8B57"/>
+            </linearGradient>
+          </defs>
+          <path d="M32 6c8 0 16 4 16 8v14c0 12-8 22-16 26-8-4-16-14-16-26V14c0-4 8-8 16-8z" fill="url(#g)"/>
+          <text x="32" y="40" font-size="18" font-family="monospace" text-anchor="middle" fill="white" font-weight="700">{</text>
+        </svg>
+        <div>
+          <div class="brand-title">Civic Coded Africa</div>
+          <div class="muted" style="font-size:0.85rem">Governance made yours</div>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <a href="#product">Product</a>
+        <a href="#about">About</a>
+        <a href="#contact">Get involved</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div>
+        <h1 id="hero-heading">Civic learning built for Africa</h1>
+        <div class="slogan">Governance made yours</div>
+        <p class="lead">We break down complex policy into short, plain-language lessons that are fun and engaging — quizzes, scenarios, and localized examples designed for communities across the African continent.</p>
+
+        <div class="cta-row" role="group" aria-label="Primary actions">
+          <a class="btn btn-primary" href="#contact">Request a demo</a>
+          <a class="btn btn-outline" href="#product">See learning modules</a>
+        </div>
+
+        <div class="grid3" style="margin-top:28px">
+          <div class="card">
+            <h3 style="margin-top:0">Policy Explainer</h3>
+            <p style="margin:0.4rem 0 0">Short, illustrated explainers that unpack budgets, elections, procurement, and service delivery in plain terms.</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Interactive Quizzes</h3>
+            <p style="margin:0.4rem 0 0">Scenario-based quizzes that make learning sticky and show real-world impact.</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Local Toolkit</h3>
+            <p style="margin:0.4rem 0 0">Materials and guides for community workshops and translations into local languages.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-ill" aria-hidden="true">
+        <div class="card">
+          <div style="font-weight:700;color:var(--indigo)">Trusted by partners across Africa</div>
+          <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+            <span class="kbd">Accra</span>
+            <span class="kbd">Nairobi</span>
+            <span class="kbd">Cape Town</span>
+            <span class="kbd">Kigali</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <main id="main" role="main" aria-label="Main content">
+      <section id="product" class="section" aria-labelledby="product-heading">
+        <h2 id="product-heading">Our platform</h2>
+        <p class="muted">A few core features that make our approach effective</p>
+        <div class="grid3" style="margin-top:12px">
+          <article class="card" aria-labelledby="f1">
+            <h3 id="f1">Plain-language lessons</h3>
+            <p>Each topic is distilled into a short lesson with visual examples and practical takeaways.</p>
+          </article>
+          <article class="card" aria-labelledby="f2">
+            <h3 id="f2">Micro-interactions</h3>
+            <p>Small quizzes and choice-driven scenarios help learners apply knowledge immediately.</p>
+          </article>
+          <article class="card" aria-labelledby="f3">
+            <h3 id="f3">Open & local</h3>
+            <p>Open-licensed content and tools that local partners can adapt and translate.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Civic Coded Africa</h2>
+        <p>We make civic education accessible and inclusive. Our curriculum is co-designed with educators and civic partners so it reflects real governance contexts across the continent. We prioritise privacy, accessibility, and measurable impact.</p>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact & get involved</h2>
+        <p>If you'd like a demo, want to pilot the platform, or help translate content, reach out below or email <a href="mailto:hello@civiccodedafrica.org">hello@civiccodedafrica.org</a>.</p>
+
+        <!-- Replace 'https://formspree.io/f/your-form-id' with your Formspree endpoint or other provider -->
+        <form action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form" style="max-width:720px">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <label>
+              <span class="sr-only">Name</span>
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              <span class="sr-only">Email</span>
+              <input name="email" type="email" placeholder="you@domain.org" required />
+            </label>
+          </div>
+          <label>
+            <span class="sr-only">Message</span>
+            <textarea name="message" rows="5" placeholder="How can we help?"></textarea>
+          </label>
+          <div style="margin-top:10px">
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <span style="margin-left:12px" class="muted">Or email <a href="mailto:hello@civiccodedafrica.org">hello@civiccodedafrica.org</a></span>
+          </div>
+        </form>
+
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          © <span id="year"></span> Civic Coded Africa • <a href="/privacy.html">Privacy</a> • <a href="/accessibility.html">Accessibility</a>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <span class="muted">Language</span>
+          <select class="language-select" aria-label="Select language" id="lang-select">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="sw">Kiswahili</option>
+            <option value="pt">Português</option>
+          </select>
+          <a href="https://github.com/CivicCodedAfrica" rel="noopener" target="_blank">View code</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Fill year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Language selector stub (no translations added yet)
+    document.getElementById('lang-select').addEventListener('change', function(e){
+      // placeholder: you can implement translations or link to language-specific pages
+      alert('Language change to: ' + e.target.value + ' (translation feature not yet enabled)');
+    });
+  </script>
+</body>
+</html>
